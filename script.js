@@ -16,11 +16,16 @@ document.querySelector('.check').addEventListener('click', ()=> {
 
     let valorTotal = valorParcelas + juros;
 
+    
     document.querySelector('.message').textContent =  modelo;
     
     document.querySelector('.entrada').textContent = valorEntrada.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 
     document.querySelector('.parcela').textContent = valorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'}); 
+
+    // limpando campos
+    document.querySelector('.modelo').value = "";
+    document.querySelector('.preco').value = "";
   }
 
 });
