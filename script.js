@@ -4,8 +4,6 @@ document.querySelector('.check').addEventListener('click', ()=> {
   const preco = Number(document.querySelector('.preco').value);
   let qtdParcelas = document.querySelector('.qtdParcelas').value;
 
-  console.log(qtdParcelas)
-
   if(!modelo) {
     alert('É necessário passar o modelo do carro!');
   } 
