@@ -125,6 +125,7 @@ h1 {
   padding: 2rem 12rem;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 8rem;
 }
 .btn:hover {
   background-color: #ccc;
@@ -137,4 +138,15 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+.qtdParcelas {
+  background: #222;
+  border: 3px solid #ddd;
+  font-family: inherit;
+  color: white;
+  padding: 1.5rem;
+  width: 30rem;
+  margin-bottom: 2.5rem;
+  font-size: 20px;
 }

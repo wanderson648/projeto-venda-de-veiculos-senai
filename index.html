@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Venda de veículos!</h1>
+      <h1>Simulador de Veículos</h1>
       <!-- <button class="btn again">Again!</button> -->
       <!-- <div class="number">?</div> -->
     </header>
@@ -18,16 +18,26 @@
         <input type="text" class="modelo" placeholder="Modelo do carro"/>
         <input type="text" class="preco" placeholder="Preço do carro"/>
 
-        <button class="btn check">Simular</button>
+        <select name="select" class="qtdParcelas">
+          <option value="24">24x</option>
+          <option value="36">36x</option>
+          <option value="48">48x</option> 
+          <option value="60">60x</option>
+        </select>
+
       </section>
       <section class="right">
+        
+
         <p class="label-score">Modelo do carro: <span class="message"></span></p>
         <p class="label-score">Valor da entrada: <span class="entrada"> R$ 0.00</span></p>
-        <p class="label-score">Valor das parcelas em 60x de: <span class="parcela"> R$ 0.00</span></p>
+        <p class="label-score">Valor das parcelas: <span class="parcela"> R$ 0.00</span></p>
 
         <!-- <p class="label-highscore"> -->
           <!-- 🥇 Highscore: <span class="highscore">0</span> -->
         <!-- </p> -->
+
+        <button class="btn check">Simular</button>
       </section>
     </main>
     <script src="script.js"></script>

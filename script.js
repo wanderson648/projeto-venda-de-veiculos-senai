@@ -2,16 +2,19 @@
 document.querySelector('.check').addEventListener('click', ()=> {
   const modelo = document.querySelector('.modelo').value;
   const preco = Number(document.querySelector('.preco').value);
+  let qtdParcelas = document.querySelector('.qtdParcelas').value;
+
+  console.log(qtdParcelas)
 
   if(!modelo) {
     alert('É necessário passar o modelo do carro!');
   } 
   else if (!preco) {
     alert('É necessário passar o valor do carro!');
-  }
+  } 
   else {
     let valorEntrada = preco * 0.5;
-    let valorParcelas = (preco - valorEntrada) / 60; 
+    let valorParcelas = (preco - valorEntrada) / qtdParcelas; 
     let juros = valorParcelas * 0.7;
 
     let valorTotal = valorParcelas + juros;
