@@ -1,4 +1,5 @@
 
+
 document.querySelector('.check').addEventListener('click', ()=> {
   const modelo = document.querySelector('.modelo').value;
   const preco = Number(document.querySelector('.preco').value);
